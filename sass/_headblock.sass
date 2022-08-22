@@ -1,0 +1,101 @@
+.head__block
+    position: relative
+    text-align: center
+    padding-top: 40px
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 100
+    +desktop
+        position: relative
+.scroll__change
+    background: white
+.scroll__change > .main__title
+    position: absolute
+    bottom: 200px
+    +desktop
+        position: relative
+.scroll__change > .main__logo
+    position: absolute
+    top: 60%
+    transform: translate(-50%, -50%)
+.scroll__change > .fighter__names
+    max-width: 700px
+    transition: max-width 2s ease
+.main__logo
+    max-width: 80px
+.main__title
+    font-size: 55px
+    letter-spacing: 4px
+    margin-bottom: 40px
+.fighter__names
+    display: flex
+    justify-content: space-between
+    max-width: 500px
+    margin: 0 auto
+    transition: max-width 2s ease
+    +desktop
+        max-width: 800px
+    +tablet
+        max-width: 500px
+    +phone
+        max-width: 300px
+.fighter
+    letter-spacing: 0.1em
+    font-size: 25px
+    display: flex
+    margin-bottom: 1em
+.fighter:first-child:after
+    content: "#4"
+    font-size: 13px
+    margin-left: 15px
+    color: #b1abab
+    font-family: 'Titillium Web', sans-serif
+.fighter:nth-child(2):before
+    content: "#7"
+    font-size: 13px
+    margin-right: 15px
+    color: #b1abab
+    font-family: 'Titillium Web', sans-serif
+.kalvin
+    position: fixed
+    top: 20%
+    left: 3%
+    z-index: 101
+    +desktop
+        position: relative
+        max-width: 150px
+        margin-right: 25%
+    +tablet
+        margin-right: 15%
+    +phone
+        margin-right: 0
+        width: 135px
+.emmet
+    top: 20%
+    position: fixed
+    right: 3%
+    z-index: 101
+    +desktop
+        position: relative
+        max-width: 150px
+        margin-left: 25%
+    +tablet
+        margin-left: 15%
+    +phone
+        margin-left: 0
+        width: 135px
+.line
+    width: 100%
+    height: 4px
+    background: red
+.line:after
+    content: ""
+    background-color: blue
+    width: 50%
+    height: 4px
+    position: absolute
+    z-index: 1
+
+    

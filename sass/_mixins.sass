@@ -1,0 +1,36 @@
+=rightInfo
+    position: absolute
+    right: 48%
+    font-size: 17px
+    font-family: Arial, Helvetica, sans-serif
+    color: blue
+    opacity: 0
+    transition: right 2s, opacity 1s
+    +desktop
+        opacity: 1
+        transition: none
+        position: absolute
+        right: 5%
+=leftInfo
+    position: absolute
+    left: 48%
+    font-size: 17px
+    color: red
+    font-family: Arial, Helvetica, sans-serif
+    opacity: 0
+    transition: left 2s, opacity 1s 
+    +desktop
+        opacity: 1
+        transition: none
+        position: absolute
+        left: 5%
+=desktop
+    @media screen and ( max-width: 1100px )
+        @content
+=tablet
+    @media screen and ( max-width: 650px )
+        @content
+=phone
+    @media screen and ( max-width: 455px )
+        @content
+        

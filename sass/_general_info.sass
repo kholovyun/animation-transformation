@@ -1,0 +1,62 @@
+.info__col
+    display: flex
+    position: relative
+    flex-direction: column
+    margin: 0 auto
+    justify-content: space-between
+    margin-top: 23em
+    align-items: center
+    max-width: 1200px
+    +desktop
+        margin-top: 5em
+.info__row
+    display: flex
+    justify-content: space-between
+    margin-bottom: 3.5em
+    transition: box-shadow 1s ease
+.info__row:active
+    display: flex
+    align-items: center
+    box-shadow: 2px 2px 5px 0 black
+    background: white
+    width: 50%
+    height: 15vh
+    display: flex
+    transform: scale(3) 
+    z-index: 105   
+    +desktop
+        transform: scale(2)
+    +phone
+        width: 100% 
+        transform: scale(1)
+        height: 100px
+.country > img
+    display: none
+    width: 40px
+    height: 20px
+.info__row:active > .country >span
+    display: none
+.info__row:active > .country >img
+    display: block 
+.left__info
+    +leftInfo
+.info__title
+    font-size: 18px
+    letter-spacing: 0.1em
+    margin: 0em auto
+.right__info
+    +rightInfo
+.info__col:hover
+    .left__info
+         position: absolute
+         left: 27% 
+         opacity: 1
+         +desktop
+            left: 5%
+.info__col:hover
+    .right__info
+         position: absolute
+         right: 27% 
+         opacity: 1
+         +desktop
+            right: 5%
